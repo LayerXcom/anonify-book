@@ -1,0 +1,30 @@
+site_name: Anonify
+docs_dir: src
+site_dir: docs
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+nav:
+  - index.md
+  - Getting Started:
+    - Set up: Getting_Started/setup.md
+    - Testing: Getting_Started/testing.md
+  - Technologies:
+    - DLT: Technologies/dlt.md
+    - TEE: Technologies/tee.md
+    - Tree KEM: Technologies/tree_kem.md
+  - Concepts:
+    - Overview: Concepts/overview.md
+    - Requirements: Concepts/requirements.md
+    - Work Flow: Concepts/workflow.md
+  - Tutorials:
+    - ERC20: 
+      - CLI: Tutorials/ERC20/cli.md
+      - Transfer/Approve: Tutorials/ERC20/transfer_approve.md
+      - Mint/Burn: Tutorials/ERC20/mint_burn.md
+  - Performance:
+    - Evaluation: Performance/evaluation.md
+plugins:
+  - search
