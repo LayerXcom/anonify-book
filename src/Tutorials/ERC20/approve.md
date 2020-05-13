@@ -34,7 +34,7 @@ $ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_
 Current State: 0
 ```
 
-### approve
+## approve
 
 AliceからBobに`30`を`approve`します。
 
