@@ -6,16 +6,21 @@ theme:
   palette:
     primary: indigo
     accent: indigo
+  # logo: assets/images/logo5.svg
+repo_name: Anonify
+repo_url: https://github.com/LayerXcom/anonify
 nav:
   - index.md
   - 動作方法:
-    - Set up: Getting_Started/setup.md
-    - Testing: Getting_Started/testing.md
+    - セットアップ: Getting_Started/setup.md
+    - テスト: Getting_Started/testing.md
+    - サーバー起動: Getting_Started/start_server.md
+    - ネットワークへ参加: Getting_Started/join.md
   - チュートリアル:
     - ERC20:
-      - CLI: Tutorials/ERC20/cli.md
-      - Transfer/Approve: Tutorials/ERC20/transfer_approve.md
-      - Mint/Burn: Tutorials/ERC20/mint_burn.md
+      - mint/burn: Tutorials/ERC20/mint_burn.md
+      - transfer: Tutorials/ERC20/transfer.md
+      - approve/transfer_from: Tutorials/ERC20/approve.md
   - 技術コンセプト:
     - 要素技術: Concepts/technologies.md
     - アーキテクチャ: Concepts/overview.md
