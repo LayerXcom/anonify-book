@@ -87,7 +87,7 @@ Current State: 0
 
 Aliceの残高が`100`から`30`減り、`70`となっていることが確認できました。
 
-## burn
+## オーナー以外のユーザーによるburn
 
 `burn`はオーナー以外でも実行が可能です。
 Bobから`10`を`burn`してみましょう。
@@ -97,7 +97,7 @@ $ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify burn -i 
 Transaction Receipt: "59d139d1ea29ddd008ecb7947b55677d9013b24f5b7de3ea2b70badfcfe3c848"
 ```
 
-## burn後の状態
+## オーナー以外のユーザーによるburn後の状態
 
 `burn`後のAlice、Bob、Charlieの残高を確認します。
 
