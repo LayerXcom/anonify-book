@@ -13,9 +13,8 @@ nav:
   - index.md
   - 動作方法:
     - セットアップ: Getting_Started/setup.md
-    - テスト: Getting_Started/testing.md
-    - サーバー起動: Getting_Started/start_server.md
-    - ネットワークへ参加: Getting_Started/join.md
+    - ネットワークへ参加する: Getting_Started/join.md
+    - 独自関数を実装する: Getting_Started/self_defined_functions.md
   - チュートリアル:
     - ERC20:
       - mint/burn: Tutorials/ERC20/mint_burn.md
