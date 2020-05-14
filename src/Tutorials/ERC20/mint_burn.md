@@ -6,7 +6,7 @@
 `init_state`で初期化を行います。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify init_state -t 100
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify init_state -t 100
 ```
 
 Alice、Bob、Charlieの３人のアドレスを作成します。
@@ -21,7 +21,7 @@ $ ./target/debug/anonify-cli wallet add-account
 `list`コマンドで作成したaccountを確認できます。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli wallet list
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli wallet list
 Alice: JeMocNNkNqABAEqBEurffNHIr0Y=
 Bob: SyQwvGjGQmA4OG1ZV2zMNn4GXpA=
 Charlie: On1lVfkMUGm6+lT3OetO8A2HR4M=
@@ -31,15 +31,15 @@ Charlie: On1lVfkMUGm6+lT3OetO8A2HR4M=
 
 ```sh
 # Aliceの残高
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 0
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 0
 Current State: 100
 
 # Bobの残高
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 1
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 1
 Current State: 0
 
 # Charlieの残高
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 2
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 2
 Current State: 0
 ```
 
@@ -49,7 +49,7 @@ Bobに`50`をmintします。
 `init_state`を実行したAliceの権限で実行する必要があります。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify mint -a 50 -t SyQwvGjGQmA4OG1ZV2zMNn4GXpA=
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify mint -a 50 -t SyQwvGjGQmA4OG1ZV2zMNn4GXpA=
 Transaction Receipt: "c05dc918cde8caa83e4233bff236285efc7197f554a844e590619d1c24d41b8d"
 ```
 
@@ -58,13 +58,13 @@ Transaction Receipt: "c05dc918cde8caa83e4233bff236285efc7197f554a844e590619d1c24
 `mint`後のAlice、Bob、Charlieの残高を確認します。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 0
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 0
 Current State: 100
 
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 1
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 1
 Current State: 50
 
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 2
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 2
 Current State: 0
 ```
 
@@ -75,7 +75,7 @@ Current State: 0
 Aliceから`30`を`burn`します。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify burn -i 0 -a 30
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify burn -i 0 -a 30
 Transaction Receipt: "917576ddb5bdd68f01d2bb98f3ae4dcafec28c385bdb1033ed9b2b51529c4c22"
 ```
 
@@ -84,13 +84,13 @@ Transaction Receipt: "917576ddb5bdd68f01d2bb98f3ae4dcafec28c385bdb1033ed9b2b5152
 `burn`後のAlice、Bob、Charlieの残高を確認します。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 0
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 0
 Current State: 70
 
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 1
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 1
 Current State: 50
 
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 2
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 2
 Current State: 0
 ```
 
@@ -102,7 +102,7 @@ Aliceの残高が`100`から`30`減り、`70`となっていることが確認�
 Bobから`10`を`burn`してみましょう。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify burn -i 1 -a 10
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify burn -i 1 -a 10
 Transaction Receipt: "59d139d1ea29ddd008ecb7947b55677d9013b24f5b7de3ea2b70badfcfe3c848"
 ```
 
@@ -111,13 +111,13 @@ Transaction Receipt: "59d139d1ea29ddd008ecb7947b55677d9013b24f5b7de3ea2b70badfcf
 `burn`後のAlice、Bob、Charlieの残高を確認します。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 0
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 0
 Current State: 70
 
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 1
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 1
 Current State: 40
 
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 2
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 2
 Current State: 0
 ```
 

@@ -6,14 +6,14 @@
 `init_state`で初期化を行います。
 
 ```sh
-ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify init_state -t 100
+ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify init_state -t 100
 ```
 
 Alice、Bobの2人のアドレスです。  
 アドレスを作成していない場合は、[mint/burnの手順](/Tutorials/ERC20/mint_burn/)を参考にしてください。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli wallet list
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli wallet list
 Alice: JeMocNNkNqABAEqBEurffNHIr0Y=
 Bob: SyQwvGjGQmA4OG1ZV2zMNn4GXpA=
 ```
@@ -22,11 +22,11 @@ Bob: SyQwvGjGQmA4OG1ZV2zMNn4GXpA=
 
 ```sh
 # Aliceの残高
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 0
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 0
 Current State: 100
 
 # Bobの残高
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 1
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 1
 Current State: 0
 ```
 
@@ -35,7 +35,7 @@ Current State: 0
 `transfer`でAliceからBobへ`20`を送金します。
 
 ```sh
-＄ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify transfer -a 20 -t SyQwvGjGQmA4OG1ZV2zMNn4GXpA=
+＄ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify transfer -a 20 -t SyQwvGjGQmA4OG1ZV2zMNn4GXpA=
 Transaction Receipt: "0d89b58846a0db41976c6f95c62c5bfb63a5b2d4e29a560d652b913889edfde8"
 ```
 
@@ -45,11 +45,11 @@ Transaction Receipt: "0d89b58846a0db41976c6f95c62c5bfb63a5b2d4e29a560d652b913889
 
 ```sh
 # Aliceの残高
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 0
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 0
 Current State: 80
 
 # Bobの残高
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify balance_of -i 1
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 1
 Current State: 20
 ```
 
