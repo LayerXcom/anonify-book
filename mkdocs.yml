@@ -14,7 +14,7 @@ nav:
   - 動作方法:
     - セットアップ: Getting_Started/setup.md
     - ネットワークへ参加する: Getting_Started/join.md
-    - 独自関数を実装する: Getting_Started/self_defined_functions.md
+    - 独自ロジックを実装する: Getting_Started/self_defined_functions.md
   - チュートリアル:
     - ERC20:
       - mint/burn: Tutorials/ERC20/mint_burn.md
