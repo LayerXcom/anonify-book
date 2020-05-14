@@ -4,7 +4,7 @@ Anonifyのセットアップについて説明します。
 ## 動作環境
 
 - [Azure Confidential Computing](https://azure.microsoft.com/ja-jp/solutions/confidential-compute/)のようなIntel SGXをサポートするハードウェア環境
-
+- [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html)がインストール済みであること
 
 ## セットアップ
 

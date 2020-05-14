@@ -1,41 +1,40 @@
 
+## スマートコントラクトのデプロイ
 
-
-
-```sh
-$ ./target/debug/anonify-cli wallet init
-$ ./target/debug/anonify-cli wallet add-account
-```
+スマートコントラクトのデプロイを行います。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify deploy
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify deploy
+6d68b0a618ab5a08be3600957f768c15c9b04baa
 ```
+
+デプロイすると上記のように、コントラクトのアドレスが出力されます。このアドレスを環境変数`CONTRACT_ADDR`に設定します。
 
 ```sh
 $ export CONTRACT_ADDR=6d68b0a618ab5a08be3600957f768c15c9b04baa
 ```
 
-```sh
-$ ANONIFY_URL=http://172.18.0.4:8080 ./target/debug/anonify-cli anonify set_contract_addr 
-```
-
+環境変数を設定した状態で、`set_contract_addr`を実行することで、Anonify上にコントラクトアドレスを設定できます。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify start_polling
-$ ANONIFY_URL=http://172.18.0.4:8080 ./target/debug/anonify-cli anonify start_polling
+$ ANONIFY_URL=http://172.28.1.2:8080 ./target/debug/anonify-cli anonify set_contract_addr 
 ```
 
-
-
+さらに、Anonifyネットワークの状態遷移を監視するため、`start_polling`を実行します。
 
 ```sh
-$ ANONIFY_URL=http://172.18.0.4:8080 ./target/debug/anonify-cli anonify register
+$ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify start_polling
+$ ANONIFY_URL=http://172.28.1.2:8080 ./target/debug/anonify-cli anonify start_polling
 ```
 
+## ネットワークへの参加
 
-cliのビルド
+Anonifyネットワークに参加するため、`register`を実行します。
+Attested Computingのための検証(REPORT提出）とグループ鍵の共有（Add Handshake）が実行されます。
 
 ```sh
-$ cd anonify
-$ ./scripts/build-cli.sh
+$ ANONIFY_URL=http://172.28.1.2:8080 ./target/debug/anonify-cli anonify register
 ```
+
+これでAnonifyネットワークへの参加が完了です。  
+次節で述べるよう独自関数を実装することが可能です。[ERC20のチュートリアル](/Tutorials/ERC20/transfer/)も実行できます。
