@@ -9,7 +9,8 @@
 ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify init_state -t 100
 ```
 
-Alice、Bobの2人のアドレスです。
+Alice、Bobの2人のアドレスです。  
+アドレスを作成していない場合は、[mint/burnの手順](/Tutorials/ERC20/mint_burn/)を参考にしてください。
 
 ```sh
 $ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli wallet list

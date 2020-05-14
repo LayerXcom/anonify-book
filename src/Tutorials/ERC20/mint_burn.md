@@ -9,7 +9,16 @@
 $ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli anonify init_state -t 100
 ```
 
-Alice、Bob、Charlieの３人のアドレスです。
+Alice、Bob、Charlieの３人のアドレスを作成します。
+`wallet password`および`account name`を設定してください。
+
+```sh
+$ ./target/debug/anonify-cli wallet init
+$ ./target/debug/anonify-cli wallet add-account
+$ ./target/debug/anonify-cli wallet add-account
+```
+
+`list`コマンドで作成したaccountを確認できます。
 
 ```sh
 $ ANONIFY_URL=http://172.18.0.3:8080 ./target/debug/anonify-cli wallet list
