@@ -111,12 +111,15 @@ Transaction Receipt: "59d139d1ea29ddd008ecb7947b55677d9013b24f5b7de3ea2b70badfcf
 `burn`後のAlice、Bob、Charlieの残高を確認します。
 
 ```sh
+# Aliceの残高
 $ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 0
 Current State: 70
 
+# Bobの残高
 $ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 1
 Current State: 40
 
+# Charlieの残高
 $ ANONIFY_URL=http://172.28.1.1:8080 ./target/debug/anonify-cli anonify balance_of -i 2
 Current State: 0
 ```
