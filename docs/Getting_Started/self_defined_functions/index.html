@@ -539,7 +539,7 @@
                 <p>本設では、Anonifyにて独自ロジックを実装する方法について説明します。</p>
 <h2 id="enclave">Enclave内のメモリを定義</h2>
 <p><code>impl_memory</code>マクロによって、Enclave内に確保されるメモリを定義します。<br />
-例えば、<a href="https://layerxcom.github.io/anonify-book/Tutorials/ERC20/">ERC20のチュートリアル</a>では、以下のような4つを定義しています。</p>
+例えば、<a href="https://layerxcom.github.io/anonify-book/Tutorials/ERC20/transfer/">ERC20のチュートリアル</a>では、以下のような4つを定義しています。</p>
 <pre><code class="rust">impl_memory! {
     (0, &quot;Balance&quot;, U64),
     (1, &quot;Approved&quot;, Approved),
