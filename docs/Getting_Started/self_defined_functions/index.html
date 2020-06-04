@@ -26,7 +26,7 @@
       
         
         
-        <meta name="theme-color" content="#3f51b5">
+        <meta name="theme-color" content="#7e57c2">
       
     
     
@@ -48,7 +48,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple">
   
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -539,7 +539,7 @@
                 <p>本設では、Anonifyにて独自ロジックを実装する方法について説明します。</p>
 <h2 id="enclave">Enclave内のメモリを定義</h2>
 <p><code>impl_memory</code>マクロによって、Enclave内に確保されるメモリを定義します。<br />
-例えば、<a href="/Tutorials/ERC20/">ERC20のチュートリアル</a>では、以下のような4つを定義しています。</p>
+例えば、<a href="https://layerxcom.github.io/anonify-book/Tutorials/ERC20/">ERC20のチュートリアル</a>では、以下のような4つを定義しています。</p>
 <pre><code class="rust">impl_memory! {
     (0, &quot;Balance&quot;, U64),
     (1, &quot;Approved&quot;, Approved),
@@ -551,7 +551,7 @@
 <p>第1引数にEnclave上のID、第2引数に名前、そして第3引数に型を指定します。</p>
 <h2 id="_1">独自関数の定義</h2>
 <p><code>impl_runtime</code>マクロによって、関数を定義することが可能です。<br />
-以下は、<a href="/Tutorials/ERC20/transfer/">ERC20のチュートリアル</a>で利用する<code>transfer</code>の実装例です。</p>
+以下は、<a href="https://layerxcom.github.io/anonify-book/Tutorials/ERC20/transfer/">ERC20のチュートリアル</a>で利用する<code>transfer</code>の実装例です。</p>
 <pre><code class="rust">impl_runtime!{
     #[fn_id=1]
     pub fn transfer(

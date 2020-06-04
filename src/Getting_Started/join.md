@@ -37,4 +37,4 @@ $ ANONIFY_URL=http://172.28.1.2:8080 ./target/debug/anonify-cli anonify register
 ```
 
 これでAnonifyネットワークへの参加が完了です。  
-次節で述べるよう独自関数を実装することが可能です。[ERC20のチュートリアル](/Tutorials/ERC20/transfer/)も実行できます。
+次節で述べるよう独自関数を実装することが可能です。[ERC20のチュートリアル](https://layerxcom.github.io/anonify-book/Tutorials/ERC20/transfer/)も実行できます。

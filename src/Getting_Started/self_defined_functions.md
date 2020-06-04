@@ -5,7 +5,7 @@
 ## Enclave内のメモリを定義
 
 `impl_memory`マクロによって、Enclave内に確保されるメモリを定義します。  
-例えば、[ERC20のチュートリアル](/Tutorials/ERC20/)では、以下のような4つを定義しています。
+例えば、[ERC20のチュートリアル](https://layerxcom.github.io/anonify-book/Tutorials/ERC20/)では、以下のような4つを定義しています。
 
 ```rust
 impl_memory! {
@@ -21,7 +21,7 @@ impl_memory! {
 ## 独自関数の定義
 
 `impl_runtime`マクロによって、関数を定義することが可能です。  
-以下は、[ERC20のチュートリアル](/Tutorials/ERC20/transfer/)で利用する`transfer`の実装例です。
+以下は、[ERC20のチュートリアル](https://layerxcom.github.io/anonify-book/Tutorials/ERC20/transfer/)で利用する`transfer`の実装例です。
 
 
 ```rust
