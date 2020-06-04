@@ -5,7 +5,7 @@
 ## Enclave内のメモリを定義
 
 `impl_memory`マクロによって、Enclave内に確保されるメモリを定義します。  
-例えば、[ERC20のチュートリアル](https://layerxcom.github.io/anonify-book/Tutorials/ERC20/)では、以下のような4つを定義しています。
+例えば、[ERC20のチュートリアル](https://layerxcom.github.io/anonify-book/Tutorials/ERC20/transfer/)では、以下のような4つを定義しています。
 
 ```rust
 impl_memory! {
