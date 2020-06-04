@@ -10,5 +10,5 @@ Anonifyはプライバシを保護した上で、ブロックチェーンを改�
 
 ## 参考リンク
 
-- White Paper
+- [White Paper](https://layerx.co.jp/wp-content/uploads/2020/06/anonify.pdf)
 - [Github](https://github.com/LayerXcom/anonify)

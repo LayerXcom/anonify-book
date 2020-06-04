@@ -10,18 +10,18 @@
       
       
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.3">
     
     
       
-        <title>CLI - Anonify</title>
+        <title>独自ロジックを実装する - Anonify</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.62d34fff.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.62d34fff.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.c8acc6db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.c8acc6db.min.css">
       
       
         
@@ -55,6 +55,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#enclave" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -62,7 +67,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../../.." title="Anonify" class="md-header-nav__button md-logo" aria-label="Anonify">
+    <a href="../.." title="Anonify" class="md-header-nav__button md-logo" aria-label="Anonify">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
@@ -79,7 +84,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              CLI
+              独自ロジックを実装する
             
           </span>
         </div>
@@ -117,6 +122,19 @@
 </div>
     
     
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/LayerXcom/anonify/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Anonify
+  </div>
+</a>
+      </div>
+    
   </nav>
 </header>
     
@@ -136,7 +154,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Anonify" class="md-nav__button md-logo" aria-label="Anonify">
+    <a href="../.." title="Anonify" class="md-nav__button md-logo" aria-label="Anonify">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z" /></svg>
@@ -144,6 +162,19 @@
     </a>
     Anonify
   </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/LayerXcom/anonify/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Anonify
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -153,7 +184,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." title="Anonify" class="md-nav__link">
+    <a href="../.." title="Anonify" class="md-nav__link">
       Anonify
     </a>
   </li>
@@ -163,23 +194,25 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
-      Getting Started
+      動作方法
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="Getting Started" data-md-level="1">
+    <nav class="md-nav" aria-label="動作方法" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
-        Getting Started
+        動作方法
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -190,8 +223,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Getting_Started/setup/" title="Set up" class="md-nav__link">
-      Set up
+    <a href="../setup/" title="セットアップ" class="md-nav__link">
+      セットアップ
     </a>
   </li>
 
@@ -202,9 +235,66 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Getting_Started/testing/" title="Testing" class="md-nav__link">
-      Testing
+    <a href="../join/" title="ネットワークへ参加する" class="md-nav__link">
+      ネットワークへ参加する
     </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        独自ロジックを実装する
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="独自ロジックを実装する" class="md-nav__link md-nav__link--active">
+      独自ロジックを実装する
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enclave" class="md-nav__link">
+    Enclave内のメモリを定義
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    独自関数の定義
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -223,17 +313,42 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
-      Technologies
+      チュートリアル
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="Technologies" data-md-level="1">
+    <nav class="md-nav" aria-label="チュートリアル" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
-        Technologies
+        チュートリアル
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
+      ERC20
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="ERC20" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        ERC20
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -244,8 +359,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Technologies/dlt/" title="DLT" class="md-nav__link">
-      DLT
+    <a href="../../Tutorials/ERC20/mint_burn/" title="mint/burn" class="md-nav__link">
+      mint/burn
     </a>
   </li>
 
@@ -256,8 +371,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Technologies/tee/" title="TEE" class="md-nav__link">
-      TEE
+    <a href="../../Tutorials/ERC20/transfer/" title="transfer" class="md-nav__link">
+      transfer
     </a>
   </li>
 
@@ -268,9 +383,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Technologies/tree_kem/" title="Tree KEM" class="md-nav__link">
-      Tree KEM
+    <a href="../../Tutorials/ERC20/approve/" title="approve/transfer_from" class="md-nav__link">
+      approve/transfer_from
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -289,17 +409,17 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
-      Concepts
+      技術コンセプト
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
-    <nav class="md-nav" aria-label="Concepts" data-md-level="1">
+    <nav class="md-nav" aria-label="技術コンセプト" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
-        Concepts
+        技術コンセプト
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -310,8 +430,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Concepts/overview/" title="Overview" class="md-nav__link">
-      Overview
+    <a href="../../Concepts/technologies/" title="要素技術" class="md-nav__link">
+      要素技術
     </a>
   </li>
 
@@ -322,8 +442,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Concepts/requirements/" title="Requirements" class="md-nav__link">
-      Requirements
+    <a href="../../Concepts/overview/" title="アーキテクチャ" class="md-nav__link">
+      アーキテクチャ
     </a>
   </li>
 
@@ -334,98 +454,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../Concepts/workflow/" title="Work Flow" class="md-nav__link">
-      Work Flow
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
-    
-    <label class="md-nav__link" for="nav-5">
-      Tutorials
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-        </span>
-        Tutorials
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-1" type="checkbox" id="nav-5-1" checked>
-    
-    <label class="md-nav__link" for="nav-5-1">
-      ERC20
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="ERC20" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-1">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-        </span>
-        ERC20
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="CLI" class="md-nav__link md-nav__link--active">
-      CLI
-    </a>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../transfer_approve/" title="Transfer/Approve" class="md-nav__link">
-      Transfer/Approve
+    <a href="../../Concepts/requirements/" title="プロパティ" class="md-nav__link">
+      プロパティ
     </a>
   </li>
 
@@ -436,55 +466,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../mint_burn/" title="Mint/Burn" class="md-nav__link">
-      Mint/Burn
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
-    
-    <label class="md-nav__link" for="nav-6">
-      Performance
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Performance" data-md-level="1">
-      <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-        </span>
-        Performance
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../Performance/evaluation/" title="Evaluation" class="md-nav__link">
-      Evaluation
+    <a href="../../Concepts/workflow/" title="ワークフロー" class="md-nav__link">
+      ワークフロー
     </a>
   </li>
 
@@ -501,18 +484,96 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enclave" class="md-nav__link">
+    Enclave内のメモリを定義
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    独自関数の定義
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/LayerXcom/anonify/edit/master/docs/Getting_Started/self_defined_functions.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
+                  </a>
+                
                 
                   
                 
                 
-                  <h1>CLI</h1>
+                  <h1>独自ロジックを実装する</h1>
                 
-                
+                <p>本設では、Anonifyにて独自ロジックを実装する方法について説明します。</p>
+<h2 id="enclave">Enclave内のメモリを定義</h2>
+<p><code>impl_memory</code>マクロによって、Enclave内に確保されるメモリを定義します。<br />
+例えば、<a href="/Tutorials/ERC20/">ERC20のチュートリアル</a>では、以下のような4つを定義しています。</p>
+<pre><code class="rust">impl_memory! {
+    (0, &quot;Balance&quot;, U64),
+    (1, &quot;Approved&quot;, Approved),
+    (2, &quot;TotalSupply&quot;, U64),
+    (3, &quot;Owner&quot;, UserAddress)
+}
+</code></pre>
+
+<p>第1引数にEnclave上のID、第2引数に名前、そして第3引数に型を指定します。</p>
+<h2 id="_1">独自関数の定義</h2>
+<p><code>impl_runtime</code>マクロによって、関数を定義することが可能です。<br />
+以下は、<a href="/Tutorials/ERC20/transfer/">ERC20のチュートリアル</a>で利用する<code>transfer</code>の実装例です。</p>
+<pre><code class="rust">impl_runtime!{
+    #[fn_id=1]
+    pub fn transfer(
+        self,
+        sender: UserAddress,
+        recipient: UserAddress,
+        amount: U64
+    ) {
+        let sender_balance = self.get_map::&lt;U64&gt;(sender, &quot;Balance&quot;)?;
+        let recipient_balance = self.get_map::&lt;U64&gt;(recipient, &quot;Balance&quot;)?;
+
+        ensure!(sender_balance &gt; amount, &quot;transfer amount exceeds balance.&quot;);
+
+        let sender_update = update!(sender, &quot;Balance&quot;, sender_balance - amount);
+        let recipient_update = update!(recipient, &quot;Balance&quot;, recipient_balance + amount);
+
+        insert![sender_update, recipient_update]
+    }
+}
+</code></pre>
+
+<p><code>update</code>マクロと<code>insert</code>マクロを組み合わせて、状態遷移を実現できます。</p>
                 
               
               
@@ -531,7 +592,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../../Concepts/workflow/" title="Work Flow" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../join/" title="ネットワークへ参加する" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
             </div>
@@ -540,19 +601,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Work Flow
+                ネットワークへ参加する
               </div>
             </div>
           </a>
         
         
-          <a href="../transfer_approve/" title="Transfer/Approve" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Tutorials/ERC20/mint_burn/" title="mint/burn" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Transfer/Approve
+                mint/burn
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -579,15 +640,15 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.f81b9e8b.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.23546af0.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.f81b9e8b.min.js"></script>
+      <script src="../../assets/javascripts/bundle.23546af0.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: "../../..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.58d22e8e.min.js"
+            worker: "../../assets/javascripts/worker/search.58d22e8e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
